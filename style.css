@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /*odległość między liniami tekstu*/
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #08c5d6;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;/* usuwa punkty z listy */
+    padding: 0; /* margines wewnętrzny */
+}
+
+nav ul li {
+    display: inline;/* ustawia elementy listy w jednej linii */
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+    background-color: #f9ab03;
+    height: 70vh;
+}
+
+section {
+    margin-bottom: 20px; /* margines dolny */
+}
+
+article {
+    background-color: #05f489;
+    padding: 15px;
+    border: 1px solid #ccc; /* obramowanie linia ciągła */
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #039095;
+    color: #fff;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    header, footer {
+        padding: 15px 0;
+       
+    }
+    main {
+        height: auto;
+    }
+
+    article{
+        border-radius: 10px; 
+        margin-top: 10px;
+    }
+
+    .row{
+      
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    .row div {
+        width: 100%;
+        margin: 0 auto; /* Wycentruje wszystkie divy */
+        box-sizing: border-box;
+    }
+
+  
+    
+    
+}
+
+.row {
+    display: flex;/* ustawia elementy w rzędzie */
+    justify-content: space-between;/* rozkłada elementy równomiernie */
+    margin-top: 10px;
+}
+
+.row div {
+    flex: 1;/* każdy div zajmuje równą przestrzeń */
+    text-align: center;
+    padding: 5px;
+    border: 0px solid #ccc;
+    margin: 0 5px;
+    background-color: #f9f9f9;
+    height: 8vh;
+}
+
+.row div:first-child {
+    
+    background-color: #039095a9;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.row div:last-child {
+    
+    background-color: #f1f903;
+    border-radius: 10px;
+    color: white;
+    
+    border: 1px solid #000;
+}
+.row div:nth-child(2) {
+    background-color: #f84206;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.row div:nth-child(3) {
+    background-color: #ba04b7;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+
+
+
+
