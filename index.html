@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+    <title>Semantic HTML Project</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Semantic HTML Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This project demonstrates the use of semantic HTML elements to improve accessibility and SEO.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <button id="addDivBtn">Dodaj nowy element do .row</button>
+            <button id="removeDivBtn">Usuń ostatni element z .row</button>
+            <button id="addMenuItemBtn">Dodaj element do menu</button>
+            <button id="removeItemBtn">Usuń element z menu</button>
+
+
+
+            <article>
+                <h3>Web Development</h3>
+                <p>We offer modern web development services using the latest technologies.</p>
+                <div class="row">
+                    <div>Frontend</div>
+                    <div>Backend</div>
+                    <div>DataBase</div>
+                    <div>Full Stack</div>
+                    
+                </div>
+            </article>
+            <article>
+                <h3>SEO Optimization</h3>
+                <p>Our team specializes in optimizing websites for search engines.</p>
+                <div class="row">
+                    <div>Keyword Research</div>
+                    <div>Content Strategy</div>
+                    <div>Ads</div>
+                    <div>Analytics</div>
+                </div>
+            </article>
+        </section>
+    </main>
+  <footer>
+    <p>&copy; 2025 Jan Kowalski. Wszystkie prawa zastrzeżone.</p> <!--& - znak specjalny-->
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
